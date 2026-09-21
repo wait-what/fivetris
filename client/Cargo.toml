@@ -1,0 +1,16 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+macroquad = "0.4.16"
+lib = { path = "../lib" }
+
+[profile.ci]
+inherits = "release"
+opt-level = 3
+codegen-units = 1
+panic = "abort"
+lto = "fat"
+strip = "symbols"
