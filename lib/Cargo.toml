@@ -1,0 +1,11 @@
+[package]
+name = "lib"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = ["ruleset_builtin"]
+ruleset_builtin = []
+
+[dependencies]
+nanoserde = "0.2.1"
