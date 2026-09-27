@@ -1,0 +1,11 @@
+[package]
+name = "asset_store"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+crabz2 = "0.7.0"
+image = { version = "0.25.10", default-features = false, features = ["webp"] }
+nanoserde = "0.2.1"
+rectangle-pack = "0.4.2"
+tar = "0.4.46"
