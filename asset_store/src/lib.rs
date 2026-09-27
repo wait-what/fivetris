@@ -20,6 +20,7 @@ pub struct Texture {
     pub height: u32,
 }
 
+#[derive(Debug, Clone)]
 pub struct AssetStore {
     pub atlases: Vec<DynamicImage>,
     pub texture_positions: HashMap<String, Texture>,
